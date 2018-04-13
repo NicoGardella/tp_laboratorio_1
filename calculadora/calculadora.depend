@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1523581567 source:d:\labo1\tp1\calculadora\funciones.c
+
+1523581432 source:d:\labo1\tp1\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1523581434 d:\labo1\tp1\calculadora\funciones.h
+
+1523626676 source:c:\users\ngardella\downloads\tp1\tp1\calculadora\funciones.c
+
+1523625390 source:c:\users\ngardella\downloads\tp1\tp1\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1523624754 c:\users\ngardella\downloads\tp1\tp1\calculadora\funciones.h
+
