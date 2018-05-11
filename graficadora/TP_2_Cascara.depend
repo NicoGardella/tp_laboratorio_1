@@ -27,3 +27,22 @@
 	"persona.h"
 	"utn.h"
 
+1526067138 source:c:\users\ngardella\downloads\tp_2_cascara\graficadora\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1525383929 c:\users\ngardella\downloads\tp_2_cascara\graficadora\utn.h
+
+1526067506 source:c:\users\ngardella\downloads\tp_2_cascara\graficadora\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"persona.h"
+	"utn.h"
+
+1526067199 c:\users\ngardella\downloads\tp_2_cascara\graficadora\persona.h
+
