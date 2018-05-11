@@ -33,6 +33,7 @@ int main()
                 break;
             case 2:
                 persona_mostrar(arrayP,QTP);
+                persona_baja(arrayP,QTP,-1);
                 break;
             case 3:
                 persona_ordenar(arrayP,QTP,1);
