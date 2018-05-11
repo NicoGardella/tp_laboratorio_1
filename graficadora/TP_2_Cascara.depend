@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1526064406 source:c:\users\ngardella\downloads\tp_2_cascara\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"persona.h"
+
+1461846544 c:\users\ngardella\downloads\tp_2_cascara\tp_2_cascara\funciones.h
+
+1525867834 source:c:\users\ngardella\downloads\tp_2_cascara\tp_2_cascara\funciones.c
+
+1526066435 source:c:\users\ngardella\downloads\tp_2_cascara\tp_2_cascara\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1525383929 c:\users\ngardella\downloads\tp_2_cascara\tp_2_cascara\utn.h
+
+1526064423 c:\users\ngardella\downloads\tp_2_cascara\tp_2_cascara\persona.h
+
+1526066836 source:c:\users\ngardella\downloads\tp_2_cascara\tp_2_cascara\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"persona.h"
+	"utn.h"
+
