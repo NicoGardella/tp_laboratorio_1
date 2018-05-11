@@ -60,7 +60,7 @@ int persona_mostrar(Persona* array,int limite)
         for(i=0;i<limite;i++)
         {
             if(!array[i].isEmpty)
-                printf("-Nombre: %s -Dni: %s -Edad: %d \n", array[i].nombre, array[i].dni, array[i].edad);
+                printf("Numero: %d -Nombre: %s -Dni: %s -Edad: %d \n",i, array[i].nombre, array[i].dni, array[i].edad);
 
         }
     }
@@ -150,6 +150,7 @@ int persona_baja(Persona* array,int limite, int id)
 {
 
     int retorno=-1;
+    id = getInt("Ingrese numero de persona a borrar\n");
 
     if(id>=0 && array[id].isEmpty==0)
     {
