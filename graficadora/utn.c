@@ -436,3 +436,33 @@ int getValidDni(char requestMessage[],char errorMessage[], char errorMessageLeng
     }
     return retorno;
 }
+
+int getStringDni(char mensaje[],char input[])
+{
+    char dni[50];
+    getString(mensaje,dni);
+    if(validarDni(dni) == 0)
+    {
+        strcpy(input,dni);
+        return 1;
+    }
+    return 0;
+}
+
+
+int validarDni(char* arrayDni)
+{
+    int i=0;
+    int retorno = 0;
+
+    while(arrayDni[i] != '\0')
+    {
+        if(arrayDni[i] < '0' || arrayDni[i] > '9' || strlen(arrayDni)>8 || strlen(arrayDni)<7)
+        {
+            retorno = -1;
+            break;
+        }
+        i++;
+    }
+    return retorno;
+}
