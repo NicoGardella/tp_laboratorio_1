@@ -29,4 +29,6 @@ void pause(void);
 void clearScreen(void);
 
 
+int validarDni(char* arrayDni);
+int getStringDni(char mensaje[],char input[]);
 int getValidDni(char requestMessage[],char errorMessage[], char errorMessageLenght[],char input[], int maxLenght,int attemps);
