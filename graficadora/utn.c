@@ -6,9 +6,9 @@
 
 
 /**
- * \brief Solicita un número al usuario y devuelve el resultado
+ * \brief Solicita un nÃºmero al usuario y devuelve el resultado
  * \param mensaje Es el mensaje a ser mostrado
- * \return El número ingresado por el usuario
+ * \return El nÃºmero ingresado por el usuario
  *
  */
 float getFloat(char* mensaje)
@@ -21,9 +21,9 @@ float getFloat(char* mensaje)
 
 
 /**
- * \brief Solicita un número al usuario y devuelve el resultado
+ * \brief Solicita un nÃºmero al usuario y devuelve el resultado
  * \param mensaje Es el mensaje a ser mostrado
- * \return El número ingresado por el usuario
+ * \return El nÃºmero ingresado por el usuario
  *
  */
 int getInt(char* mensaje)
@@ -50,11 +50,11 @@ char getChar(char* mensaje)
     return auxiliar;
 }
 /**
- * \brief Genera un número aleatorio
- * \param desde Número aleatorio mínimo
- * \param hasta Número aleatorio máximo
- * \param iniciar Indica si se trata del primer número solicitado 1 indica que si
- * \return retorna el número aleatorio generado
+ * \brief Genera un nÃºmero aleatorio
+ * \param desde NÃºmero aleatorio mÃ­nimo
+ * \param hasta NÃºmero aleatorio mÃ¡ximo
+ * \param iniciar Indica si se trata del primer nÃºmero solicitado 1 indica que si
+ * \return retorna el nÃºmero aleatorio generado
  *
  */
 char getNumeroAleatorio(int desde , int hasta, int iniciar)
@@ -66,9 +66,9 @@ char getNumeroAleatorio(int desde , int hasta, int iniciar)
 
 
 /**
- * \brief Verifica si el valor recibido es numérico aceptando flotantes
+ * \brief Verifica si el valor recibido es numÃ©rico aceptando flotantes
  * \param str Array con la cadena a ser analizada
- * \return 1 si es númerico y 0 si no lo es
+ * \return 1 si es nÃºmerico y 0 si no lo es
  *
  */
 
@@ -99,9 +99,9 @@ int esNumericoFlotante(char str[])
 }
 
 /**
- * \brief Verifica si el valor recibido es numérico
+ * \brief Verifica si el valor recibido es numÃ©rico
  * \param str Array con la cadena a ser analizada
- * \return 1 si es númerico y 0 si no lo es
+ * \return 1 si es nÃºmerico y 0 si no lo es
  *
  */
 
@@ -144,9 +144,9 @@ int esSoloLetras(char str[])
 
 
 /**
- * \brief Verifica si el valor recibido contiene solo letras y números
+ * \brief Verifica si el valor recibido contiene solo letras y nÃºmeros
  * \param str Array con la cadena a ser analizada
- * \return 1 si contiene solo espacio o letras y números, y 0 si no lo es
+ * \return 1 si contiene solo espacio o letras y nÃºmeros, y 0 si no lo es
  *
  */
 int esAlfaNumerico(char str[])
@@ -163,7 +163,7 @@ int esAlfaNumerico(char str[])
 
 
 /**
- * \brief Verifica si el valor recibido contiene solo números, + y -
+ * \brief Verifica si el valor recibido contiene solo nÃºmeros, + y -
  * \param str Array con la cadena a ser analizada
  * \return 1 si contiene solo numeros, espacios y un guion.
  *
@@ -189,7 +189,7 @@ int esTelefono(char str[])
 /**
  * \brief Solicita un texto al usuario y lo devuelve
  * \param mensaje Es el mensaje a ser mostrado
- * \param input Array donde se cargará el texto ingresado
+ * \param input Array donde se cargarÃ¡ el texto ingresado
  * \return void
  */
 void getString(char mensaje[],char input[])
@@ -202,7 +202,7 @@ void getString(char mensaje[],char input[])
 /**
  * \brief Solicita un texto al usuario y lo devuelve
  * \param mensaje Es el mensaje a ser mostrado
- * \param input Array donde se cargará el texto ingresado
+ * \param input Array donde se cargarÃ¡ el texto ingresado
  * \return 1 si el texto contiene solo letras
  */
 int getStringLetras(char mensaje[],char input[])
@@ -218,10 +218,10 @@ int getStringLetras(char mensaje[],char input[])
 }
 
 /**
- * \brief Solicita un texto numérico al usuario y lo devuelve
+ * \brief Solicita un texto numÃ©rico al usuario y lo devuelve
  * \param mensaje Es el mensaje a ser mostrado
- * \param input Array donde se cargará el texto ingresado
- * \return 1 si el texto contiene solo números
+ * \param input Array donde se cargarÃ¡ el texto ingresado
+ * \return 1 si el texto contiene solo nÃºmeros
  */
 int getStringNumeros(char mensaje[],char input[])
 {
@@ -238,10 +238,10 @@ int getStringNumeros(char mensaje[],char input[])
 
 
 /**
- * \brief Solicita un texto numérico al usuario y lo devuelve (acepta flotantes)
+ * \brief Solicita un texto numÃ©rico al usuario y lo devuelve (acepta flotantes)
  * \param mensaje Es el mensaje a ser mostrado
- * \param input Array donde se cargará el texto ingresado
- * \return 1 si el texto contiene solo números
+ * \param input Array donde se cargarÃ¡ el texto ingresado
+ * \return 1 si el texto contiene solo nÃºmeros
  */
 int getStringNumerosFlotantes(char mensaje[],char input[])
 {
@@ -262,7 +262,7 @@ int getStringNumerosFlotantes(char mensaje[],char input[])
  * \param errorMessage Es el mensaje a ser mostrado en caso de error
  * \param lowLimit Es el limite inferior aceptado
  * \param lowLimit Es el limite superior aceptado
- * \param input puntero al lugar donde se cargará el numero ingresado
+ * \param input puntero al lugar donde se cargarÃ¡ el numero ingresado
  * \param attemps indica la cantidad de reintentos ante un error
  * \return 0 si consiguio el Numero -1 si no
  *
@@ -304,7 +304,7 @@ int getValidInt(char requestMessage[],char errorMessage[], int* input,int lowLim
  * \param requestMessage Es el mensaje a ser mostrado para solicitar el dato
  * \param errorMessage Es el mensaje a ser mostrado en caso de error de tipo
  * \param errorMessageLenght Es el mensaje a ser mostrado en caso de error de longitud
- * \param input Array donde se cargará el texto ingresado
+ * \param input Array donde se cargarÃ¡ el texto ingresado
  * \param maxLenght int Longitud maxima del texto ingresado
  * \param attemps indica la cantidad de reintentos ante un error
  * \return 0 si consiguio el String -1 si no
@@ -342,7 +342,7 @@ int getValidString(char requestMessage[],char errorMessage[], char errorMessageL
  * \param requestMessage Es el mensaje a ser mostrado en caso de error
  * \param lowLimit Es el limite inferior aceptado
  * \param lowLimit Es el limite superior aceptado
- * \param input puntero al lugar donde se cargará el numero ingresado
+ * \param input puntero al lugar donde se cargarÃ¡ el numero ingresado
  * \param attemps indica la cantidad de reintentos ante un error
  * \return 0 si consiguio el Numero -1 si no
  *
@@ -411,4 +411,28 @@ void clearScreen(void)
 {
     system("clear"); //system("cls");
 }
+int getValidDni(char requestMessage[],char errorMessage[], char errorMessageLenght[],char input[], int maxLenght,int attemps)
+{
+    int i;
+    int retorno=-1;
+    char buffer[50];
 
+    for(i=0;i<attemps;i++)
+    {
+        if (!getStringDni(requestMessage,buffer))
+        {
+            printf ("%s",errorMessage);
+            continue;
+        }
+        if(strlen(buffer) >= maxLenght)
+        {
+            printf ("%s",errorMessageLenght);
+            continue;
+
+        }
+        retorno=0;
+        strcpy(input,buffer);
+        break;
+    }
+    return retorno;
+}
