@@ -27,3 +27,6 @@ int getValidFloat(char requestMessage[],char errorMessage[], float* input,float 
 void clearStdin(void);
 void pause(void);
 void clearScreen(void);
+
+
+int getValidDni(char requestMessage[],char errorMessage[], char errorMessageLenght[],char input[], int maxLenght,int attemps);
