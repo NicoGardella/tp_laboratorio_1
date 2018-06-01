@@ -82,11 +82,10 @@ int persona_alta(Persona* array,int limite)
         {
             if(!getValidString("\nNombre? ","\nEso no es un nombre","El maximo es 40",nombre,40,2))
             {
-                if(getStringNumeros("\ndni? ",dni))
+                if(!getValidDni("\nIngrese dni? ","\nEso no es un dni","El maximo es 20",dni,20,2))
                 {
                     if(!getValidInt("\nEdad? ","\nEso no es una edad",&edad,0,200,2))
                     {
-                            printf("-----------------%s----------------------",edad);
                             retorno = 0;
                             strcpy(array[i].nombre,nombre);
                             strcpy(array[i].dni,dni);
