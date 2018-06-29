@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1529665414 source:c:\users\ngardella\downloads\tp 3 labo\tp_3_cascara\tp_3\tp_3_cascara\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529665414 c:\users\ngardella\downloads\tp 3 labo\tp_3_cascara\tp_3\tp_3_cascara\arraylist.h
+
+1530273867 source:c:\users\ngardella\downloads\tp 3 labo\tp_3_cascara\tp_3\tp_3_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"utn.h"
+
+1530274037 c:\users\ngardella\downloads\tp 3 labo\tp_3_cascara\tp_3\tp_3_cascara\funciones.h
+	"ArrayList.h"
+
+1530271017 c:\users\ngardella\downloads\tp 3 labo\tp_3_cascara\tp_3\tp_3_cascara\utn.h
+
+1530271001 source:c:\users\ngardella\downloads\tp 3 labo\tp_3_cascara\tp_3\tp_3_cascara\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1530274086 source:c:\users\ngardella\downloads\tp 3 labo\tp_3_cascara\tp_3\tp_3_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"funciones.h"
+	"utn.h"
+	"ArrayList.h"
+
