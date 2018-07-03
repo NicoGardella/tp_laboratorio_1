@@ -219,10 +219,13 @@ int obtenerCantidad(Persona* array,int limite, int edadHasta, int edadDesde)
     int contador = 0;
     for(i=0;i<limite;i++)
     {
-        if(array[i].edad<=edadHasta && array[i].edad>=edadDesde)
-        {
-            contador++;
-        }
+		if(array[i].isEmpty==0)
+		{
+            if(array[i].edad<=edadHasta && array[i].edad>=edadDesde)
+            {
+                contador++;
+            }
+		}
     }
     return contador;
 }
