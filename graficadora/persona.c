@@ -45,7 +45,7 @@ int persona_mostrarDebug(Persona* array,int limite)
         retorno = 0;
         for(i=0;i<limite;i++)
         {
-            printf("[DEBUG]  -Nombre: %s -Dni: %s -Edad: %d -IsEmpty: %d\n", array[i].nombre, array[i].dni, array[i].edad, array[i].isEmpty);
+            printf("[DEBUG]  -Nombre: %s -Dni: %d -Edad: %d -IsEmpty: %d\n", array[i].nombre, array[i].dni, array[i].edad, array[i].isEmpty);
         }
     }
     return retorno;
@@ -60,7 +60,7 @@ int persona_mostrar(Persona* array,int limite)
         for(i=0;i<limite;i++)
         {
             if(!array[i].isEmpty)
-                printf("Numero: %d -Nombre: %s -Dni: %s -Edad: %d \n",i, array[i].nombre, array[i].dni, array[i].edad);
+                printf("Numero: %d -Nombre: %s -Dni: %d -Edad: %d \n",i, array[i].nombre, array[i].dni, array[i].edad);
 
         }
     }
@@ -72,7 +72,7 @@ int persona_alta(Persona* array,int limite)
     int retorno = -1;
     int i;
     char nombre[50];
-    char dni[8];
+    int dni;
     int edad;
     if(limite > 0 && array != NULL)
     {
@@ -80,15 +80,15 @@ int persona_alta(Persona* array,int limite)
 
         if(i >= 0)
         {
-            if(!getValidString("\nNombre? ","\nEso no es un nombre","El maximo es 40",nombre,40,2))
+            if(!getValidString("\nNombre? ","\nEso no es un nombre","El maximo es 50",nombre,50,2))
             {
-                if(!getValidDni("\nIngrese dni? ","\nEso no es un dni","El maximo es 20",dni,20,2))
+                if(!getValidInt("\nEdad? ","\nEso no es edad",&edad,1,100,4))
                 {
-                    if(!getValidInt("\nEdad? ","\nEso no es una edad",&edad,0,200,2))
+                    if(!getValidInt("\nDni? ","\nEso no es un dni",&dni,18000000,90000000,4))
                     {
                             retorno = 0;
                             strcpy(array[i].nombre,nombre);
-                            strcpy(array[i].dni,dni);
+                            array[i].dni=dni;
                             array[i].edad=edad;
 
                             //------------------------------
@@ -112,7 +112,7 @@ int persona_alta(Persona* array,int limite)
     return retorno;
 }
 
-int persona_altaForzada(Persona* array,int limite, char nombre[50], char dni[8], int edad)
+int persona_altaForzada(Persona* array,int limite, char nombre[50], int dni, int edad)
 {
     int retorno = -1;
     int i;
@@ -125,7 +125,7 @@ int persona_altaForzada(Persona* array,int limite, char nombre[50], char dni[8],
 
                             retorno = 0;
                             strcpy(array[i].nombre,nombre);
-                            strcpy(array[i].dni,dni);
+                            array[i].dni=dni;
                             array[i].edad=edad;
 
                             //------------------------------

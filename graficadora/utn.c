@@ -269,7 +269,6 @@ int getStringNumerosFlotantes(char mensaje[],char input[])
  */
 int getValidInt(char requestMessage[],char errorMessage[], int* input,int lowLimit, int hiLimit,int attemps)
 {
-    printf (".--.-.-.-.-..-.-.-.-.-.-.");
     char auxStr[256];
     int auxInt, i, retorno = -1;
 
@@ -282,7 +281,7 @@ int getValidInt(char requestMessage[],char errorMessage[], int* input,int lowLim
             continue;
 
         }
-        auxInt = 10;//atoi(auxStr);
+        auxInt = atoi(auxStr);
         if(auxInt < lowLimit || auxInt > hiLimit)
         {
             printf ("%s",errorMessage);

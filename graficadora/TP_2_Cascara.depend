@@ -46,3 +46,27 @@
 
 1526067199 c:\users\ngardella\downloads\tp_2_cascara\graficadora\persona.h
 
+1530615542 source:c:\proyectoslabo\mis tps\tp_laboratorio_1\graficadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"persona.h"
+
+1530615866 c:\proyectoslabo\mis tps\tp_laboratorio_1\graficadora\persona.h
+
+1530615900 source:c:\proyectoslabo\mis tps\tp_laboratorio_1\graficadora\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"persona.h"
+	"utn.h"
+
+1530615542 c:\proyectoslabo\mis tps\tp_laboratorio_1\graficadora\utn.h
+
+1530616048 source:c:\proyectoslabo\mis tps\tp_laboratorio_1\graficadora\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
