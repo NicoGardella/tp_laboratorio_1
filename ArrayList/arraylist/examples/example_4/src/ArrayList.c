@@ -456,19 +456,21 @@ int resizeUp(ArrayList* this)
 
     if(this!=NULL)
     {
-        if((this->size)==(this->reservedSize))
+        if((this->size)==(this->reservedSize) || (this->reservedSize-this->size)>10)
         {
-            auxReservedSize = sizeof(void*)*(this->reservedSize+AL_INITIAL_VALUE);
+            auxReservedSize = sizeof(void*)*(this->size+AL_INITIAL_VALUE);
             pElementsAux = realloc(this->pElements,auxReservedSize);
             if(pElementsAux!=NULL)
             {
                 this->pElements = pElementsAux;
-                this->reservedSize = this->reservedSize+AL_INITIAL_VALUE;
+                this->reservedSize = this->size+AL_INITIAL_VALUE;
                 returnAux=0;
             }
         }
         else
+        {
             returnAux=0;
+        }
 
     }
     return returnAux;
